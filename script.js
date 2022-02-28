@@ -40,10 +40,10 @@ console.log("-----------")
 console.log("Ejercicio 1")
 function numPrimo(num){
     for(let i=2; i<=num; i++){
-        if(num%i==0){
+        if((num%i) == 0 && num != i){
             break;
         }
-        else{
+        else if ((num%i) == 0){
             console.log(`${num} es número primo`)}
         }
 } 
